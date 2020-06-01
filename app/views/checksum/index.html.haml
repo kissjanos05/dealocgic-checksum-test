@@ -1,0 +1,9 @@
+= form_tag :checksum do
+  = label_tag :input
+  = text_field_tag :input
+  = submit_tag 'Create checksum'
+
+-if @checksum
+  %div
+    %b Checksum:
+    = @checksum
